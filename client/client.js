@@ -8,7 +8,7 @@ app.controller("IndexController", ['$scope', '$http', function($scope, $http){
       if(response.status !== 200){
         throw new Error('Failed to fetch cats from API');
       }
-      $sope.cat = {};
+      $scope.cat = {};
       $scope.cats = response.data;
       return response.data;
     });
